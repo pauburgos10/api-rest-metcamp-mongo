@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(require('./routes/peliculas'))
 
 
-mongoose.connect('mongodb+srv://pauburgos10:r6hnEYanrKVggyUT@cluster0.rp7wm.mongodb.net/test1?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://<user>:<password>@cluster0.rp7wm.mongodb.net/test1?retryWrites=true&w=majority', 
   {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true }, 
   (err, res) => {
   if (err) {
